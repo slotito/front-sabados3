@@ -1,19 +1,20 @@
 <template>
   <div class="containerPpal">
     <NavegadorVue />
-    <ContenidoVue />
+    <router-view />
+
   </div>
 </template>
 
 <script>
-import ContenidoVue from './components/ContenidoVue.vue'
 import NavegadorVue from './components/NavegadorVue.vue'
+
 
 export default {
   name: 'App',
   components: {
-    ContenidoVue,
     NavegadorVue
+    
   }
 }
 </script>

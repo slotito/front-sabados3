@@ -4,8 +4,15 @@
 
     <div class="navegador__content">
       <div class="navegador__sub">
-        <img class= "Nav-Item" src="../assets/navegadorVue/Logo.png" alt="Logo" />
-        <img class= "Nav-Item" src="../assets/navegadorVue/Menu-Icon.png" alt="Logo" />
+        <div>
+            <img class="Nav-Item" src="../assets/navegadorVue/Logo.png" alt="Logo" />
+            <router-link to="/carrito">
+                <img class= "Nav-Item" src="../assets/navegadorVue/Menu-Icon.png" alt="Logo" />            
+            </router-link>
+        </div>
+
+
+
         <img class= "Nav-Item" src="../assets/navegadorVue/Nav-Link.png" alt="Logo" />
         <img class= "Nav-Item" src="../assets/navegadorVue/Nav-Link2.png" alt="Logo" />
       </div>
