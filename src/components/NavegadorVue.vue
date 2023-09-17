@@ -5,16 +5,24 @@
     <div class="navegador__content">
       <div class="navegador__sub">
         <div>
-            <img class="Nav-Item" src="../assets/navegadorVue/Logo.png" alt="Logo" />
-            <router-link to="/carrito">
-                <img class= "Nav-Item" src="../assets/navegadorVue/Menu-Icon.png" alt="Logo" />            
-            </router-link>
+          <router-link to="/home">
+            <img class= "Nav-Item" src="../assets/navegadorVue/Nav-Link2.png" alt="Logo" />
+          </router-link>
+
+          <router-link to="/carrito">
+            <img class="Nav-Item" src="../assets/navegadorVue/Logo.png" alt="Logo" @click="mostrarCarrito" />
+          </router-link>
+
+          <router-link to="/menu">
+              <img class= "Nav-Item" src="../assets/navegadorVue/Menu-Icon.png" alt="Logo" />            
+          </router-link>
+          <router-link to="/otraCosa">
+            <img class= "Nav-Item" src="../assets/navegadorVue/Nav-Link.png" alt="Logo" />
+          </router-link>
         </div>
 
 
 
-        <img class= "Nav-Item" src="../assets/navegadorVue/Nav-Link.png" alt="Logo" />
-        <img class= "Nav-Item" src="../assets/navegadorVue/Nav-Link2.png" alt="Logo" />
       </div>
 
       <img class="Nav-Item" src="../assets/navegadorVue/Nav-Link3.png" alt="Logo" />
@@ -26,12 +34,12 @@
 </template>
 
 <script>
-//import Group1 from  '../assets/Logo.png'
+//import CarritoVue from './pages/CarritoVue.vue';
 
 
 export default {
   components: {
-    //Group1
+    //CarritoVue
   }
 }
 
@@ -72,5 +80,8 @@ export default {
   height: 40px;;
 }
 
+.Nav-Item:hover {
+    opacity: 0.5;
+}
 
 </style>

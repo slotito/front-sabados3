@@ -25,7 +25,7 @@ export default {
 
 .content {
     flex: 1; /* Ocupa todo el espacio restante disponible */
-    background-color: #FFFFFF; 
+    background-color: white; 
     padding: 10px; 
     flex-direction: column;
     justify-content: flex-end;

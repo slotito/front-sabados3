@@ -2,20 +2,21 @@
   <div class="containerPpal">
     <NavegadorVue />
     <router-view />
-
   </div>
+
 </template>
 
 <script>
-import NavegadorVue from './components/NavegadorVue.vue'
+import NavegadorVue from './components/NavegadorVue.vue';
+
+
 
 
 export default {
   name: 'App',
   components: {
-    NavegadorVue
-    
-  }
+    NavegadorVue,
+},
 }
 </script>
 
