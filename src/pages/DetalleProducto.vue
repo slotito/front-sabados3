@@ -1,3 +1,24 @@
 <template>
-    <h2>Detalle del producto</h2>
+
+<div>
+        <MostrarProductoVue />
+</div>  
+
 </template>
+
+<script>
+
+import MostrarProductoVue from '../components/MostrarProductoVue.vue'
+
+export default {
+    name: 'DetalleProducto',
+    components: {
+        MostrarProductoVue
+    }
+}
+    
+</script>
+
+<style>
+
+</style>

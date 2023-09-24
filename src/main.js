@@ -5,7 +5,7 @@ import { createRouter, createWebHashHistory } from 'vue-router'
 
 import PageError from './pages/PageError'
 import HomeVue from './pages/HomeVue'
-import DetalleProducto from './pages/DetalleProducto'
+import MostrarPruductoVueVue from './pages/DetalleProducto'
 import CarritoVue from './pages/CarritoVue'
 
 const routes = [
@@ -17,7 +17,9 @@ const routes = [
         path:'/home', component: HomeVue
     },
     {
-        path:'/detalle', component: DetalleProducto
+        path:'/detalle',
+        nombre: 'detalleProducto', 
+        component: MostrarPruductoVueVue
     },
     {
         path:'/carrito', component: CarritoVue
@@ -31,7 +33,7 @@ const router = createRouter({
   history: createWebHashHistory(),
   routes,
 });
-
+export default router;
 
 
 const app = createApp(App).use(router);
